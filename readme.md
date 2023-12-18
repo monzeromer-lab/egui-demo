@@ -45,7 +45,4 @@ To build and run the demo, follow these steps:
 
 ## License
 
-This project is licensed under the [Your License] - see the [LICENSE](LICENSE) file for details.
-```
-
-Remember to replace placeholders like `your-username`, `egui-demo`, and `[Your License]` with the appropriate information for your project. This template is straightforward and focuses on the essential steps to build, run, and install the demo.
+This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.

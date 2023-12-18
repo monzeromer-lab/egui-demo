@@ -1,0 +1,26 @@
+[package]
+name = "desktop"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.deb]
+maintainer = "Monzer Omer <monzer.a.omer@gmail.com>"
+copyright = "2023, Monzer Omer <monzer.a.omer@gmail.com>"
+license-file = ["LICENSE", "4"]
+extended-description = "this is a demo for egui desktop, you can use it as a template too"
+depends = "$auto"
+section = "utility"
+priority = "optional"
+# assets = [
+#     ["target/release/cargo-deb", "usr/bin/", "755"],
+#     ["README.md", "usr/share/doc/cargo-deb/README", "644"],
+# ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cargo-deb = "2.0.2"
+eframe = "0.24.1"
+egui = "0.24.1"
+egui_extras = "0.24.2"
+env_logger = "0.10.1"

@@ -794,17 +794,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "desktop"
-version = "0.1.0"
-dependencies = [
- "cargo-deb",
- "eframe",
- "egui",
- "egui_extras",
- "env_logger",
-]
-
-[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -887,6 +876,17 @@ dependencies = [
  "log",
  "nohash-hasher",
  "serde",
+]
+
+[[package]]
+name = "egui-demo"
+version = "0.1.0"
+dependencies = [
+ "cargo-deb",
+ "eframe",
+ "egui",
+ "egui_extras",
+ "env_logger",
 ]
 
 [[package]]

@@ -1,13 +1,15 @@
 [package]
-name = "desktop"
+name = "egui-demo"
 version = "0.1.0"
 edition = "2021"
+description="demo"
 
 [package.metadata.deb]
 maintainer = "Monzer Omer <monzer.a.omer@gmail.com>"
 copyright = "2023, Monzer Omer <monzer.a.omer@gmail.com>"
 license-file = ["LICENSE", "4"]
 extended-description = "this is a demo for egui desktop, you can use it as a template too"
+description="demo"
 depends = "$auto"
 section = "utility"
 priority = "optional"
@@ -15,6 +17,23 @@ priority = "optional"
 #     ["target/release/cargo-deb", "usr/bin/", "755"],
 #     ["README.md", "usr/share/doc/cargo-deb/README", "644"],
 # ]
+
+[package.metadata.bundle]
+name = "DemoApplication"
+identifier = "com.monzer.demoapplication"
+# icon = ["32x32.png", "128x128.png", "128x128@2x.png"]
+copyright = "Copyright (c) Monzer Omer 2023. All rights reserved."
+category = "Developer Tool"
+short_description = "A demo application."
+long_description = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat.
+"""
+
+osx_frameworks = ["SDL2"]
+osx_url_schemes = ["com.doe.exampleapplication"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
